@@ -1,0 +1,28 @@
+body {
+    background-color: black;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background: url;
+    background-size: cover;
+}
+
+.container { 
+    text-align: center;
+
+h1,h2,h3,h4,h5,h6 {
+    padding: 5px;
+    background-color: #yellow;
+}
+
+#currentWord {
+    letter-spacing: 10px;
+}
+.game-column {
+    padding-top: 20px;
+    border: 3px dashed #fff;
+    text-align: center;
+    margin-top: 20px;
+    min-height: 500px;
+    background-color: rgba(255, 255, 255, .3);
+}
