@@ -17,26 +17,34 @@
 //variables//
 
 var wins = 0; //how many wins//
-var word; //selected word//
-var guessWord = []; //guess//
-var guessedLetters = []; //stored guesses//
-var space; //number of spaces in a word//
+//selected word//
+// var guessWord = []; //guess//
+// var guessedLetters = []; //stored guesses//
+var space = (" "); //number of spaces in a word//
 const lives = "8"; //number of remaining lives//
 var remainingGuesses = 0;
 var gameStarted = false;
 var hasFinished = false;
 var randomWords = ["rancor", "greedo", "tatooine", "watto"];
+guessedLetters = [];
+guessingWord = [];
+
+document.addEventListener("DOMContentLoaded", function(){
+    // Handler when the DOM is fully loaded
+  
+
 
 function resetGame() {
+    if(remainingGuesses == 0){}
     remainingGuesses = lives;
     gameStarted = false;
 }
 
-// Computer picks a random word//
-word = Math.floor(Math.random() * randomWords.length);
 
-guessedLetters = [];
-guessingWord = [];
+// Computer picks a random word//
+var word = Math.floor(Math.random() * randomWords.length);
+
+
 
 for (var i = 0; i < randomWords[word].length; i++) {
     guessingWord.push("_");
@@ -89,18 +97,17 @@ function makeGuess(letter) {
 
 function evaluateGuess(letter) {
     var position = [];
-    for (var i = 0; i < randomWords[word].length; i++) {
+    for (position = 0; position < randomWords[word].length; i++) {
         if (randomWords[word][i] === letter) {
             positions.push(i);
         }
     }
-    if (positions.length <= 0) {
-        remainingGuesses--;
-    } else { (var i = 0; i < positions.length; i++) {
-            guessingWord[positions[i]] = letter;
-        }
-
-    }
+    // if (positions.length <= 0) {
+    //     remainingGuesses--;
+    // } else { (position < positions.length; i++) {
+    //         guessingWord[positions[i] = letter;
+    //     }
+    // }
 };
 //see if the user wins//
 function checkWin() {
@@ -109,3 +116,4 @@ function checkWin() {
         hasFinished = true;
     }
 };
+});

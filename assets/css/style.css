@@ -1,28 +1,23 @@
-body {
-    background-color: black;
-    padding-top: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    background: url;
-    background-size: cover;
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: gold;
+    margin-top: 30px;
 }
 
-.container { 
-    text-align: center;
-
-h1,h2,h3,h4,h5,h6 {
-    padding: 5px;
-    background-color: #yellow;
+img {
+    padding: 30px;
+    width: 400px;
+    height: 350px;
 }
 
-#currentWord {
-    letter-spacing: 10px;
-}
-.game-column {
-    padding-top: 20px;
-    border: 3px dashed #fff;
-    text-align: center;
-    margin-top: 20px;
-    min-height: 500px;
-    background-color: rgba(255, 255, 255, .3);
+#pressany{
+    padding: 30px;
 }
