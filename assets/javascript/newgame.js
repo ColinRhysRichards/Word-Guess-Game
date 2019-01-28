@@ -9,7 +9,18 @@ var wordArray = ["almond cookie", "ambrosia", "angel food cake", "apple brown be
 "cheesecake", "cherry pie", "chocolate bar", "chocolate cake", "chocolate chip cookie", "chocolate mousse",
 "churro", "cinnamon roll", "cobbler", "coconut cake", "coconut cream pie", "coffee cake", "cookie",
 "crepe suzette", "cupcake", "custard", "danish pastry", "dessert", "devils food cake","doughnut", "dumplings",
-"eclair", "flan", "fortune cookie",]
+"eclair", "flan", "fortune cookie", "french toast", "fritter", "frosting", "frozen yogurt", "fruit cake",
+"fruit cocktail", "fruit salad", "fudge", "gelatin", "gelato", "gingerbread", "gingersnaps", "honey",
+"hot-fudge", "sundae", "ice cream", "ice cream cake", "icing", "jam", "jelly", "jellyroll", "key lime pie",
+"ladyfingers", "lemon bars", "lemon meringue pie", "macroon", "marshmellow", "meringue", "milkshake", 
+"molasses", "mousse", "muffin", "neapolitan ice cream", "nougat", "nut brittle", "oatmeal cookie", 
+"pancakes", "panna cotta", "parfait", "pastry", "peanut brittle", "peanut butter cookie", "pecan pie",
+"pie", "poached pears", "popover", "popsicle", "pound cake", "praline", "pudding", "pumpkin pie", "quick bread",
+"raisin bread", "red velvet cake", "rhubarb pie", "rice pudding", "smores", "scone", "sherbet", "shortbread",
+"snickerdoodle", "soda", "soda bread", "sorbet", "souffle", "sponge cake", "spumoni", "strawberry short cake",
+"strudel", "sugar", "sugar cookie", "sundae", "sweet potato pie", "sweet roll", "sweets", "tapioca pudding",
+"tart", "toasted marshmallow", "toffee", "torte", "trifle", "truffle", "turnover", "upsidedown cake",
+"vanilla cream pie", "vanilla pudding", "wafffle", "watermelon ice", "yellow cake", "zabiglione"]
 
 var chosenWord = wordArray[Math.floor(wordArray.length * Math.random())];
 var chosenWordSplit = chosenWord.split("");
