@@ -22,21 +22,29 @@ var wordArray = ["almond cookie", "ambrosia", "angel food cake", "apple brown be
 "tart", "toasted marshmallow", "toffee", "torte", "trifle", "truffle", "turnover", "upsidedown cake",
 "vanilla cream pie", "vanilla pudding", "wafffle", "watermelon ice", "yellow cake", "zabiglione"]
 
+userChoices= ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
+"t", "u", "v", "w", "x", "y", "z"]
+
+
+
 var chosenWord = wordArray[Math.floor(wordArray.length * Math.random())];
 var chosenWordSplit = chosenWord.split("");
 console.log(chosenWord)
 console.log(chosenWordSplit)
 
+document.onload(startGame, letter)
+
 //Press any key to start the game
     //Onkeypress run the function that starts the game
     function startGame() {
         document.getElementById("start").style.backgroundColor = "red";
-        document.getElementById("test").style.color = "green";
-        chosenWordSplit.forEach(letter);  
+        document.getElementById("wordToGuess").style.color = "green";
+        chosenWordSplit.forEach(letter);
+
       }
 
     function letter() {
-        test.innerHTML = test.innerHTML + " " + "_" +" " ; 
+        document.getElementById("wordToGuess").innerHTML = document.getElementById("wordToGuess").innerHTML + " " + "_" +" " ; 
       }
 //The computer has to select a random word from an array
 
