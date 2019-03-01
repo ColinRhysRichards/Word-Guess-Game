@@ -8,23 +8,28 @@
     <title>Word Guess Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
 </head>
-        <body id="start" onkeypress="startGame()">
-            <h1>HANG * MAN</h1>
-            <h2>Dessert Edition</h2>
-            <img src="cherrypie">
-            <div id="letterContainer">
-                <img src="pie eating animation">
-                <div id="availableChoices"></div>
-                <div id="wordToGuess"></div>
-                <div id="wrongUserLetters"></div>
-            </div> 
+
+<body id="start">
+    <h1>HANG * MAN</h1>
+    <h2>Dessert Edition</h2>
+    <div id="cherryPie">
+        <img src="cherrypie">
+    </div>
+    <div id="letterContainer">
+        <div id="pieEating">
+            <img src="pie eating animation">
+        </div>
+        <div id="availableChoices"></div>
+        <div id="wordToGuess"></div>
+        <div id="wrongUserLetters"></div>
+    </div>
     <script src="assets/javascript/newgame.js">
     </script>
-    
+
 </body>
 
 </html>

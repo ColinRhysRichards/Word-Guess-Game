@@ -1,7 +1,7 @@
 var wins = 0;
 var losses = 0;
-var guessesLeft = 9;
-var guessesSoFar = [];
+var guesses = 7;
+var guessedSoFar = [];
 var wordArray = ["almond cookie", "ambrosia", "angel food cake", "apple brown betty", "apple crisp",
 "apple pie", "baked Alaska", "baked apple", "baklava", "banana split", "Belgian waffle", "biscotti",
 "black forest cake", "blueberry muffin", "bombe", "Boston cream pie", "bread pudding", "brownie",
@@ -32,25 +32,34 @@ var chosenWordSplit = chosenWord.split("");
 console.log(chosenWord)
 console.log(chosenWordSplit)
 
-document.onload(startGame, letter)
+window.onload=startGame;
 
 //Press any key to start the game
     //Onkeypress run the function that starts the game
     function startGame() {
-        document.getElementById("start").style.backgroundColor = "red";
-        document.getElementById("wordToGuess").style.color = "green";
         chosenWordSplit.forEach(letter);
+        userChoices.forEach(alphabet);
+      };
 
-      }
+      function alphabet(item){
+        document.getElementById("availableChoices").innerHTML = document.getElementById("availableChoices").innerHTML + "<button onclick=grabValue()>" + " " + item + " " + "</button>";
+        console.log(item)
+      };
 
     function letter() {
-        document.getElementById("wordToGuess").innerHTML = document.getElementById("wordToGuess").innerHTML + " " + "_" +" " ; 
-      }
+        document.getElementById("wordToGuess").innerHTML = document.getElementById("wordToGuess").innerHTML + " " + "_" +" ";
+      };
+
+      function grabValue(){
+        document.get4
+      };
 //The computer has to select a random word from an array
 
 //That word is then displayed as _ _ _ _ _ _
 
 //The user has 7 guesses, which decrement as a key is pressed
+function userGuesses(){
+}
 //The same key cannot be pressed again to decrement
 //If the user uses all of the guesses then the game is over and there is an option to reset
 
