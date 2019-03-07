@@ -1,6 +1,6 @@
 var wins = 0;
 var losses = 0;
-var guesses = 7;
+var guesses = 6;
 var guessedSoFar = [];
 var wordArray = ["almond cookie", "ambrosia", "angel food cake", "apple brown betty", "apple crisp",
 "apple pie", "baked Alaska", "baked apple", "baklava", "banana split", "Belgian waffle", "biscotti",
@@ -57,8 +57,30 @@ window.onload=startGame;
 
 //That word is then displayed as _ _ _ _ _ _
 
-//The user has 7 guesses, which decrement as a key is pressed
+//The user has 6 guesses, which decrement as a key is pressed
 function userGuesses(){
+}
+switch (guesses){
+  case 6:
+  document.getElementById("pieImage").src="./assets/images/wholepie.jpg";
+  break;
+  case 5:
+  document.getElementById("pieImage").src="./assets/images/pie1.jpg";
+  break;
+  case 4:
+  document.getElementById("pieImage").src="./assets/images/pie2.jpg";
+  break;
+  case 3:
+  document.getElementById("pieImage").src="./assets/images/pie3.jpg";
+  break;
+  case 2:
+  document.getElementById("pieImage").src="./assets//images/pie4.jpg";
+  break;
+  case 1:
+  document.getElementById("pieImage").src="./assets//images/pie5.jpg";
+  break;
+  case 0:
+  document.getElementById("pieImage").src="./assets/images/nopie.jpg";
 }
 //The same key cannot be pressed again to decrement
 //If the user uses all of the guesses then the game is over and there is an option to reset
